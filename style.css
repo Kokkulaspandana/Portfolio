@@ -29,7 +29,7 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: var(--font-body);
+  font-family: 'Inter';
   font-size: 16px;
   line-height: 1.7;
   overflow-x: hidden;
@@ -54,9 +54,9 @@ ul { list-style: none; }
   gap: 8px;
   padding: 12px 28px;
   border-radius: 50px;
-  font-family: var(--font-body);
+  font-family: 'Inter';
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   border: none;
   transition: var(--transition);
@@ -106,7 +106,7 @@ section { padding: 100px 5%; }
   margin-bottom: 14px;
 }
 .section-title {
-  font-family: var(--font-display);
+  font-family: 'Inter';
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 800;
   background: linear-gradient(135deg, var(--text), var(--accent));
@@ -136,7 +136,7 @@ section { padding: 100px 5%; }
   border-bottom: 1px solid var(--border);
 }
 .nav-logo {
-  font-family: var(--font-display);
+  font-family:'Inter';
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--text);
@@ -226,9 +226,9 @@ section { padding: 100px 5%; }
   margin-bottom: 10px;
 }
 .hero-name {
-  font-family: var(--font-display);
-  font-size: clamp(2.8rem, 7vw, 5rem);
-  font-weight: 800;
+  font-family: 'Inter';
+  font-size: clamp(3.5rem, 7vw, 3.5rem);
+  font-weight: 600;
   line-height: 1.1;
   background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
   -webkit-background-clip: text;
@@ -237,7 +237,7 @@ section { padding: 100px 5%; }
   margin-bottom: 10px;
 }
 .hero-title {
-  font-family: var(--font-display);
+  font-family: 'Inter';
   font-size: clamp(1.2rem, 3vw, 1.6rem);
   font-weight: 700;
   color: var(--accent);
@@ -250,7 +250,7 @@ section { padding: 100px 5%; }
   margin-bottom: 36px;
   line-height: 1.8;
 }
-.hero-btns { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 36px; }
+.hero-btns { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 36px;  }
 
 .hero-socials { display: flex; gap: 16px; }
 .hero-socials a {
@@ -361,7 +361,7 @@ section { padding: 100px 5%; }
   margin-bottom: 20px;
 }
 .about-card h3 {
-  font-family: var(--font-display);
+  font-family: 'Inter';
   font-size: 1.15rem;
   font-weight: 700;
   margin-bottom: 12px;
@@ -381,9 +381,9 @@ section { padding: 100px 5%; }
 .stats-row { display: flex; gap: 32px; justify-content: center; }
 .stat { display: flex; flex-direction: column; align-items: center; }
 .stat-num {
-  font-family: var(--font-display);
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-family: 'Inter';
+  font-size: 1.5rem;
+  font-weight: 600;
   background: linear-gradient(135deg, var(--accent), var(--accent2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -406,7 +406,7 @@ section { padding: 100px 5%; }
   padding: 32px 28px;
 }
 .skill-group-title {
-  font-family: var(--font-display);
+  font-family:'Inter';
   font-size: 1rem;
   font-weight: 700;
   color: var(--accent);
@@ -497,7 +497,7 @@ section { padding: 100px 5%; }
   border: 1px solid rgba(79,142,247,0.2);
 }
 .project-info h3 {
-  font-family: var(--font-display);
+  font-family: 'Inter';
   font-size: 1.15rem;
   font-weight: 700;
   margin-bottom: 10px;
@@ -569,7 +569,7 @@ section { padding: 100px 5%; }
   border-radius: var(--radius-sm);
   padding: 14px 18px;
   color: var(--text);
-  font-family: var(--font-body);
+  font-family: 'Inter';
   font-size: 15px;
   outline: none;
   transition: var(--transition);
