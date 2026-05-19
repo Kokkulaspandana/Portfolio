@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Java Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">YourName<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-circle c1"></div>
+    <div class="hero-bg-circle c2"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Your Name</h1>
+      <h2 class="hero-title">Java Full Stack Developer</h2>
+      <p class="hero-desc">
+        I build robust, scalable web applications using Java, Spring Boot, and modern front-end technologies.
+        Passionate about clean code, system design, and delivering real-world solutions.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Hire Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:you@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="hero-image-ring">
+        <div class="hero-avatar">
+          <span>YN</span>
+        </div>
+      </div>
+      <div class="hero-badge badge-spring">Spring Boot</div>
+      <div class="hero-badge badge-java">Java</div>
+      <div class="hero-badge badge-react">React</div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about" id="about">
+    <div class="section-header">
+      <span class="section-tag">Who I Am</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card glass">
+        <div class="about-icon-wrap"><i class="fas fa-user-tie"></i></div>
+        <h3>Background</h3>
+        <p>I'm a passionate Java Full Stack Developer with X+ years of experience building enterprise-grade applications. I love solving complex backend challenges while creating smooth front-end experiences.</p>
+      </div>
+      <div class="about-card glass">
+        <div class="about-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+        <h3>Education</h3>
+        <p>B.Tech in Computer Science from XYZ University (2020–2024). Strong foundation in Data Structures, Algorithms, OOP, DBMS, and System Design.</p>
+      </div>
+      <div class="about-card glass">
+        <div class="about-icon-wrap"><i class="fas fa-briefcase"></i></div>
+        <h3>Experience</h3>
+        <p>Worked on real-world projects involving REST APIs, microservices, and cloud deployments. Comfortable with Agile methodology, Git workflows, and team collaboration.</p>
+      </div>
+      <div class="about-card glass highlight-card">
+        <div class="stats-row">
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary" style="margin-top:1.5rem; display:inline-block;">Download CV <i class="fas fa-download"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="skills" id="skills">
+    <div class="section-header">
+      <span class="section-tag">What I Know</span>
+      <h2 class="section-title">My Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <!-- Backend -->
+      <div class="skill-group">
+        <h3 class="skill-group-title"><i class="fas fa-server"></i> Backend</h3>
+        <div class="skill-item">
+          <div class="skill-info"><span>Java</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Spring Boot</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Spring MVC / REST API</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Hibernate / JPA</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Microservices</span><span>70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="skill-group">
+        <h3 class="skill-group-title"><i class="fas fa-laptop-code"></i> Frontend</h3>
+        <div class="skill-item">
+          <div class="skill-info"><span>HTML & CSS</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>JavaScript</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>React.js</span><span>75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Thymeleaf / JSP</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Bootstrap / Tailwind</span><span>75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <!-- Database & Tools -->
+      <div class="skill-group">
+        <h3 class="skill-group-title"><i class="fas fa-database"></i> Database & Tools</h3>
+        <div class="skill-item">
+          <div class="skill-info"><span>MySQL / PostgreSQL</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>MongoDB</span><span>70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Git & GitHub</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>Docker</span><span>65%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span>AWS / Cloud Basics</span><span>60%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="projects" id="projects">
+    <div class="section-header">
+      <span class="section-tag">What I've Built</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-img">
+          <div class="project-img-placeholder"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">Spring Boot</span>
+            <span class="tag">React</span>
+            <span class="tag">MySQL</span>
+          </div>
+          <h3>E-Commerce Platform</h3>
+          <p>A full-stack e-commerce application with product catalog, cart management, payment integration, JWT authentication, and admin dashboard.</p>
+          <div class="project-links">
+            <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <div class="project-img-placeholder"><i class="fas fa-tasks"></i></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">Spring MVC</span>
+            <span class="tag">Thymeleaf</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <h3>Task Management App</h3>
+          <p>A project management tool with role-based access, task assignment, real-time status updates, and REST API integration for team collaboration.</p>
+          <div class="project-links">
+            <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <div class="project-img-placeholder"><i class="fas fa-hospital"></i></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">Microservices</span>
+            <span class="tag">Spring Cloud</span>
+            <span class="tag">Docker</span>
+          </div>
+          <h3>Hospital Management System</h3>
+          <p>Microservices-based hospital management system with appointment booking, patient records, doctor availability, and notification services.</p>
+          <div class="project-links">
+            <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <div class="project-img-placeholder"><i class="fas fa-chart-line"></i></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">Java</span>
+            <span class="tag">REST API</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <h3>Stock Market Tracker</h3>
+          <p>Real-time stock tracking dashboard using third-party APIs, with portfolio management, watchlist, and price alert notifications.</p>
+          <div class="project-links">
+            <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Contact Me</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="contact-desc">Have a project in mind or want to collaborate? I'm always open to discussing new opportunities. Let's build something great together!</p>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <span class="contact-label">Email</span>
+            <a href="mailto:you@email.com">you@email.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <span class="contact-label">Phone</span>
+            <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <span class="contact-label">Location</span>
+            <span>Hyderabad, Telangana, India</span>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <a href="https://github.com" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" onsubmit="sendMessage(event)">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <input type="text" id="subject" placeholder="Subject" />
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fas fa-paper-plane"></i></button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>Designed & Built by <span class="footer-name">Your Name</span> &copy; 2025</p>
+    <p class="footer-sub">Java Full Stack Developer | Hyderabad, India</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
