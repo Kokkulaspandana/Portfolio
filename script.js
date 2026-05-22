@@ -110,10 +110,23 @@ function sendMessage(e) {
 // ===========================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
+
     const target = document.querySelector(this.getAttribute('href'));
+
     if (target) {
       e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      const navbarHeight = 80;
+
+      const targetPosition =
+        target.getBoundingClientRect().top +
+        window.pageYOffset -
+        navbarHeight;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
     }
   });
 });
@@ -241,7 +254,7 @@ typeEffect();
       float vig=1.0-0.45*pow(length(uv-0.5)*1.7,2.0);
       col*=vig;
 
-      gl_FragColor=vec4(col,mask*0.55);
+      gl_FragColor=vec4(col,1.0);
     }
   `;
 
@@ -276,13 +289,13 @@ typeEffect();
     tx=(e.clientX-r.left)/r.width;
     ty=(e.clientY-r.top)/r.height;
   });
-  hero.addEventListener('touchmove',e=>{
-    e.preventDefault();
+  hero.addEventListener('touchmove',e=> {
+    consttouch = e.touches[0];
     const r=hero.getBoundingClientRect();
     tx=(e.touches[0].clientX-r.left)/r.width;
     ty=(e.touches[0].clientY-r.top)/r.height;
     tActive=1;
-  },{passive:false});
+  },{passive:true});
   hero.addEventListener('touchend',()=>{tActive=0;});
 
   let start=null;
@@ -296,6 +309,8 @@ typeEffect();
     gl.uniform1f(uTime,t);
     gl.uniform2f(uMouse,sx,sy);
     gl.uniform1f(uActive,active);
+    gl.clearColor(0.0,0.0,0.0,0.0);
+    gl.clear(gl.COLOR_BUFFER_BIT);
     gl.drawArrays(gl.TRIANGLE_STRIP,0,4);
     requestAnimationFrame(frame);
   }
